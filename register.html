@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerece Website</title>
+    <link href="styles.css" rel="stylesheet">
+    <!-- bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <!-- bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- Remix Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <!-- Swiper Slider CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.css">
+
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <div class="nav-container">
+        <!-- Top bar -->
+        <div class="p-1 d-none d-lg-block border">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-4 text-start ps-4 top-bar-text text-dark">
+                        <i class="bi bi-phone text-dark"></i> +(01) - 9177 - 5985-21 &nbsp; | &nbsp;
+                        <i class="bi bi-geo-alt"></i> Our location
+                    </div>
+                    <div class="col-md-4 text-center text-secondary">
+                        Get great devices up to 50% off
+                    </div>
+                    <div class="col-md-4 text-center text-secondary">
+                        <span class="me-3 top-bar-text"><i class="bi bi-globe-americas"></i> English</span>
+                        <a href="login.html" class="top-bar-text text-dark text-decoration-none">
+                            <i class="bi bi-person"></i>
+                            Login</a> / <a href="register.html"
+                            class="top-bar-text text-dark text-decoration-none">Sign in</a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Search & Categories -->
+        <div class="container my-3 gap-5 middle-navbar d-flex justify-content-between align-items-center">
+            <a href="index.html" class="navbar-brand logo">Sudha<span>diFy</span></a>
+            <div class="input-group search-box d-none d-lg-flex">
+                <input type="text" class="form-control" placeholder="Search Products.....">
+                <button class="btn btn-outline-secondary"><i class="bi bi-search"></i></button>
+            </div>
+            <div class="d-flex align-items-center d-none d-lg-flex gap-2">
+                <a href="wishlist.html" class="me-3 text-dark middle-navbar-a text-decoration-none position-relative">
+                    <i class="bi bi-heart fs-3"></i> <span
+                        class="position-absolute text-white d-flex align-items-center justify-content-center wishlist-span quont-span">0</span>
+                </a>
+                <a href="cart.html" class="me-3 text-dark middle-navbar-a text-decoration-none position-relative">
+                    <i class="bi bi-bag fs-3"></i> <span
+                        class="position-absolute text-white d-flex align-items-center justify-content-center wishlist-span quont-span">0</span>
+                </a>
+            </div>
+            <!-- Sidebar Toggle button -->
+            <button class="btn btn-primary sidebar-menu-toggler d-block d-lg-none" type="button"
+                data-bs-toggle="offcanvas" data-bs-target="#sidebar">
+                <i class="bi bi-list"></i>Menu
+            </button>
+        </div>
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg bg-white py-3 d-none d-lg-block">
+            <div class="container">
+                <div class="collaspe navbar-collaspe" id="navbarNav">
+                    <ul class="navbar-nav nav-menu">
+                        <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                        <li class="nav-item"><a href="about.html" class="nav-link">About Us</a></li>
+                        <li class="nav-item"><a href="shop.html" class="nav-link">Shop</a></li>
+                        <li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li>
+                        <li class="nav-item"><a href="contact.html" class="nav-link">Contact Us</a></li>
+                    </ul>
+                </div>
+                <a href="#" class="text-primary text-decoration-none text-dark"><i class="bi bi-headset"></i>Hotline
+                    <span>1900 - 888</span></a>
+            </div>
+        </nav>
+
+        <!-- Sidebar (offcanvas) -->
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="sidebar">
+            <div class="offcanvas-header">
+                <a href="index.html" class="navbar-brand logo">Sudha<span>diFy</span></a>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+            </div>
+            <div class="offcanvas-body d-flex flex-column">
+                <div class="container my-5 gap-4 d-flex justify-content-between align-items-center">
+                    <div class="input-group search-box">
+                        <input type="text" class="form-control" placeholder="Search Products.....">
+                        <button class="btn btn-outline-secondary"><i class="bi bi-search"></i></button>
+                    </div>
+                </div>
+                <!-- Sidebar Menu -->
+                <ul class="navbar-nav nav-menu">
+                    <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="about.html" class="nav-link">About Us</a></li>
+                    <li class="nav-item"><a href="shop.html" class="nav-link">Shop</a></li>
+                    <li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li>
+                    <li class="nav-item"><a href="contact.html" class="nav-link">Contact Us</a></li>
+                </ul>
+                <!-- Social Icon -->
+                <div class="mt-auto d-flex justify-content-around nav-social">
+                    <i class="bi bi-facebook fs-3"></i>
+                    <i class="bi bi-twitter fs-3"></i>
+                    <i class="bi bi-linkedin fs-3"></i>
+                    <i class="bi bi-instagram fs-3"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Page Section -->
+    <div class="page-section pt-3">
+        <div class="container">
+            <div class="row">
+                <div class="d-flex align-items-center gap-3">
+                    <p>
+                        <a href="index.html" class="text-dark text-decoration-none">Home &nbsp; > </a>
+                    <p class="text-secondary">Register</p>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Login -->
+    <section class="register py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-7 mx-auto">
+                    <div class="p-4 border login-wrap rounded shadow-sm">
+                        <h2 class="mb-4">Register</h2>
+                        <form action="">
+                            <div class="mb-3">
+                                <label class="form-label">Username</label>
+                                <input type="text" class="form-control" required>
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">Email Address</label>
+                                <input type="email" class="form-control" required>
+                            </div>
+                
+                            <div class="mb-3">
+                                <label class="form-label">Password</label>
+                                <input type="password" class="form-control" required>
+                            </div>
+                            
+                                <div class="mb-3">
+                                    <input type="checkbox" class="form-check-input">
+                                    <label for="" class="form-label">Remember me</label>
+                                </div>
+                                <p class="small text-muted">
+                                    Your personal data will be used to support your experience throughout this website, 
+                                    to manage access to your account, and for other purposes described in our 
+                                    <span class="fw-bold">privacy policy.</span>
+                                  </p>
+                                  
+                            <button type="submit" class="btn btn-default w-100 mt-3">Register</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- News Letter -->
+    <div class="newsletter mt-5 p-4 d-flex align-items-center justify-content-center">
+        <div class="container">
+            <div class="row">
+                <div class="row align-items-center">
+                    <div class="col-lg-7 mb-md-3 mb-lg-0">
+                        <div class="row align-items-center flex-column flex-md-row">
+                            <div class="col d-flex align-items-center gap-2">
+                                <img src="image/icon-email.svg" class="img-fluid email-icon" alt="">
+                                <h4 class="mb-0">Sign up to Newsletter</h4>
+                            </div>
+                            <div class="col my-4 my-md-0">
+                                <h4 class="mb-0 fs-6">...and receive $25 coupon for first shopping.</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-5">
+                        <form action="" class="form-subscriber d-flex">
+                            <input type="email" class="form-control bg-white p-2" placeholder="Enter Your E-mail">
+                            <button class="btn bg-dark text-white" type="submit">Subscribe</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer -->
+    <footer class="mt-5 pb-2">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 footer-col">
+                    <a href="index.html" class="navbar-brand logo">Sudha<span>diFy</span></a>
+                    <h5 class="mt-3 text-secondary">Contact</h5>
+                    <p class="text-secondary mb-1"><span class="text-dark"> Address: </span>265 Wellington Road, Street
+                        32, San Francisco</p>
+                    <p class="text-secondary mb-1"><span class="text-dark"> Phone: </span>+01 3333 789/ (+91) 9177598521
+                    </p>
+                    <p class="text-secondary mb-1"><span class="text-dark"> Hours: </span>10:00 - 18:00, Mon - Sat</p>
+                    <h5 class="mt-3 text-secondary">Follow Us</h5>
+                    <div class="footer-social-icon mb-sm-5 mb-md-0 mt-2 d-flex align-items-center gap-2">
+                        <img src="image/icon-facebook.svg" class="img-fluid" alt="">
+                        <img src="image/icon-twitter.svg" class="img-fluid" alt="">
+                        <img src="image/icon-instagram.svg" class="img-fluid" alt="">
+                        <img src="image/icon-youtube.svg" class="img-fluid" alt="">
+                        <img src="image/icon-pinterest.svg" class="img-fluid" alt="">
+                    </div>
+                </div>
+
+                <div class="col-lg-2 col-md-3 footer-col">
+                    <h3 class="fs-3 mb-4">About</h3>
+                    <ul class="footer-list mb-sm-5 mb-md-0 p-0">
+                        <li class="mb-2"><a href="#" class="text-dark">About Us</a></li>
+                        <li class="mb-2"><a href="#" class="text-dark">Dlivery Information</a></li>
+                        <li class="mb-2"><a href="#" class="text-dark">Privacy Policy</a></li>
+                        <li class="mb-2"><a href="#" class="text-dark">Terms & Condition</a></li>
+                        <li class="mb-2"><a href="contact.html" class="text-dark">Contact Us</a></li>
+                        <li class="mb-2"><a href="#" class="text-dark">Support Center</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-3 footer-col">
+                    <h3 class="fs-3 mb-4">My Account</h3>
+                    <ul class="footer-list mb-sm-5 mb-md-0 p-0">
+                        <li class="mb-2"><a href="#" class="text-dark">Sign In</a></li>
+                        <li class="mb-2"><a href="cart.html" class="text-dark">View Cart</a></li>
+                        <li class="mb-2"><a href="wishlist.html" class="text-dark">My Wishlist</a></li>
+                        <li class="mb-2"><a href="#" class="text-dark">Track My Order</a></li>
+                        <li class="mb-2"><a href="#" class="text-dark">Help</a></li>
+                        <li class="mb-2"><a href="#" class="text-dark">Order</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4">
+                    <h3 class="fs-3 mb-4">Install App</h3>
+                    <p class="text-secondary mb-1"> From App Store or Google Pay</p>
+                    <div class="app-img my-3">
+                        <img src="image/app-store.jpg" class="img-fluid border rounded" alt="">
+                        <img src="image/google-play.jpg" class="img-fluid border rounded" alt="">
+                    </div>
+                    <p class="text-secondary mb-1">Secured Payment Gateways</p>
+                    <img src="image/payment-method.png" class="img-fluid" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="container mt-5 pt-3 border-top">
+            <div class="row">
+                <div class="footer-bottom d-flex justify-content-between align-items-center flex-column flex-md-row">
+                    <p>&copy; copyright 2025. All Rights Reserved by <a href="#">Hemanth</a></p>
+                    <div class="footer-bottom-links d-flex gap-3">
+                        <a href="#" class="text-dark">Terms of Use</a>
+                        <a href="#" class="text-dark">Privacy Policy</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+    <!-- bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"></script>
+    <!-- Swiper Slider JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js"></script>
+    <script src="products.js"></script>
+    <script src="script.js"></script>
+
+<script>
+    // data Color
+    let items = document.querySelectorAll('.data-colors');
+        items.forEach((bar) => {
+            let bgcolor = bar.getAttribute('data-bg-color');
+            let color = bar.getAttribute('data-color');
+            let border = bar.getAttribute('data-border-color');
+
+            if (bgcolor) {
+                bar.style.backgroundColor = bgcolor;
+            }
+            if (color) {
+                bar.style.color = color;
+            }
+            if (border) {
+                bar.style.border = '1px solid ${border}';
+            }
+        })
+</script>
+
+
+</body>
+
+</html>
